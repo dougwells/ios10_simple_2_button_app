@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,29 +26,104 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfm-g1-XYR">
+                                <rect key="frame" x="124" y="551" width="126" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="1QT-ed-RWe"/>
+                                    <constraint firstAttribute="width" constant="126" id="UpW-o9-1uf"/>
+                                </constraints>
+                                <state key="normal" image="greenBtn"/>
+                                <connections>
+                                    <action selector="greenBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Hp-2J-bMG"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JoZ-rN-Tei">
+                                <rect key="frame" x="0.0" y="274" width="375" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PHF-yd-Hkh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qdd-o9-Jq3">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pxU-3X-e3o">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dda-TK-lcT">
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1KE-p4-cj5">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cEL-iC-oXL">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="11G-pO-1Bi">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="W7U-Td-mW1">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                                                                                                <subviews>
+                                                                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zpv-F4-FHM">
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                                                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                                                        <constraints>
+                                                                                                            <constraint firstAttribute="height" constant="62" id="3xp-pJ-gGa"/>
+                                                                                                            <constraint firstAttribute="width" constant="375" id="xvB-HG-fxE"/>
+                                                                                                        </constraints>
+                                                                                                    </view>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="62" id="ZHD-oD-7Kf"/>
+                                                                                            <constraint firstAttribute="width" constant="375" id="tFD-fQ-5tX"/>
+                                                                                        </constraints>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="62" id="O95-At-xWU"/>
+                                                                    <constraint firstAttribute="width" constant="375" id="hEM-TO-bs3"/>
+                                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="375" id="uwy-MP-8Xm"/>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="62" id="vTp-wR-Tpb"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="ydd-cc-9hK"/>
+                                                                    <constraint firstAttribute="height" constant="62" id="zsl-CC-OT6"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Dda-TK-lcT" firstAttribute="centerY" secondItem="pxU-3X-e3o" secondAttribute="centerY" id="Pfc-Dw-Djv"/>
+                                                            <constraint firstItem="Dda-TK-lcT" firstAttribute="centerX" secondItem="pxU-3X-e3o" secondAttribute="centerX" id="gFM-KA-5JL"/>
+                                                            <constraint firstItem="Dda-TK-lcT" firstAttribute="centerY" secondItem="pxU-3X-e3o" secondAttribute="centerY" id="l5n-r4-3Bp"/>
+                                                            <constraint firstItem="Dda-TK-lcT" firstAttribute="centerX" secondItem="pxU-3X-e3o" secondAttribute="centerX" id="tcY-fW-2Ii"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raD-cs-E15">
-                                <rect key="frame" x="94" y="113" width="186" height="52"/>
+                                <rect key="frame" x="121" y="82" width="133" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="BlueBtn"/>
                                 <connections>
                                     <action selector="blueBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f1F-3E-Fwl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfm-g1-XYR">
-                                <rect key="frame" x="94" y="491" width="186" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="greenBtn"/>
-                                <connections>
-                                    <action selector="greenBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Hp-2J-bMG"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zpv-F4-FHM">
-                                <rect key="frame" x="0.0" y="274" width="375" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nfm-g1-XYR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="108" id="JaS-CJ-r59"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nfm-g1-XYR" secondAttribute="bottom" constant="81" id="XLq-kS-AO9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nfm-g1-XYR" secondAttribute="trailing" constant="109" id="fxT-uB-he6"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="colorView" destination="Zpv-F4-FHM" id="xXO-FJ-Zk9"/>
